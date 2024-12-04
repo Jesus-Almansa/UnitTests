@@ -1,0 +1,68 @@
+Start testing: Dec 04 16:50 UTC
+----------------------------------------------------------
+2/2 Testing: TestTopic.MoreEqualityTests
+2/2 Test: TestTopic.MoreEqualityTests
+Command: "/usr/src/app/workspace/UnitTests/build/UnitTests/my_test" "--gtest_filter=TestTopic.MoreEqualityTests" "--gtest_also_run_disabled_tests"
+Directory: /usr/src/app/workspace/UnitTests/build/UnitTests
+"TestTopic.MoreEqualityTests" start time: Dec 04 16:50 UTC
+Output:
+----------------------------------------------------------
+Running main() from /usr/src/app/workspace/UnitTests/external/googletest/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = TestTopic.MoreEqualityTests
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from TestTopic
+[0;32m[ RUN      ] [mTestTopic.MoreEqualityTests
+/usr/src/app/workspace/UnitTests/UnitTests/my_test.cpp:27: Failure
+Expected equality of these values:
+  GetMeaningOfLife()
+    Which is: 42
+  0
+Oh no, a mistake!
+
+[0;31m[  FAILED  ] [mTestTopic.MoreEqualityTests (0 ms)
+[0;32m[----------] [m1 test from TestTopic (0 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (0 ms total)
+[0;32m[  PASSED  ] [m0 tests.
+[0;31m[  FAILED  ] [m1 test, listed below:
+[0;31m[  FAILED  ] [mTestTopic.MoreEqualityTests
+
+ 1 FAILED TEST
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Failed.
+"TestTopic.MoreEqualityTests" end time: Dec 04 16:50 UTC
+"TestTopic.MoreEqualityTests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+1/2 Testing: TestTopic.TrivialEquality
+1/2 Test: TestTopic.TrivialEquality
+Command: "/usr/src/app/workspace/UnitTests/build/UnitTests/my_test" "--gtest_filter=TestTopic.TrivialEquality" "--gtest_also_run_disabled_tests"
+Directory: /usr/src/app/workspace/UnitTests/build/UnitTests
+"TestTopic.TrivialEquality" start time: Dec 04 16:50 UTC
+Output:
+----------------------------------------------------------
+Running main() from /usr/src/app/workspace/UnitTests/external/googletest/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = TestTopic.TrivialEquality
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from TestTopic
+[0;32m[ RUN      ] [mTestTopic.TrivialEquality
+[0;32m[       OK ] [mTestTopic.TrivialEquality (0 ms)
+[0;32m[----------] [m1 test from TestTopic (0 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (0 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"TestTopic.TrivialEquality" end time: Dec 04 16:50 UTC
+"TestTopic.TrivialEquality" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Dec 04 16:50 UTC
