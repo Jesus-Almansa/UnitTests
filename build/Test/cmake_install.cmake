@@ -1,4 +1,4 @@
-# Install script for directory: /usr/src/app/workspace/UnitTests/UnitTests
+# Install script for directory: /usr/src/app/workspace/UnitTests/Test
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

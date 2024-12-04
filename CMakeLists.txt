@@ -7,4 +7,4 @@ include(cmake/UpdateSubmodules.cmake)
 include(CTest)
 # Add subdirectories with code
 add_subdirectory(external)
-add_subdirectory(UnitTests)
+add_subdirectory(Test)

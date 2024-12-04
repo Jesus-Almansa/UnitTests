@@ -142,14 +142,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /usr/src/app/workspace/UnitTests/build && $(CMAKE_COMMAND) -E cmake_progress_start /usr/src/app/workspace/UnitTests/build/CMakeFiles /usr/src/app/workspace/UnitTests/build/UnitTests//CMakeFiles/progress.marks
-	cd /usr/src/app/workspace/UnitTests/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 UnitTests/all
+	cd /usr/src/app/workspace/UnitTests/build && $(CMAKE_COMMAND) -E cmake_progress_start /usr/src/app/workspace/UnitTests/build/CMakeFiles /usr/src/app/workspace/UnitTests/build/Test//CMakeFiles/progress.marks
+	cd /usr/src/app/workspace/UnitTests/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Test/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /usr/src/app/workspace/UnitTests/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /usr/src/app/workspace/UnitTests/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 UnitTests/clean
+	cd /usr/src/app/workspace/UnitTests/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Test/clean
 .PHONY : clean
 
 # The main clean target
@@ -158,12 +158,12 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /usr/src/app/workspace/UnitTests/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 UnitTests/preinstall
+	cd /usr/src/app/workspace/UnitTests/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Test/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /usr/src/app/workspace/UnitTests/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 UnitTests/preinstall
+	cd /usr/src/app/workspace/UnitTests/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Test/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
@@ -172,17 +172,17 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-UnitTests/CMakeFiles/my_test.dir/rule:
-	cd /usr/src/app/workspace/UnitTests/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 UnitTests/CMakeFiles/my_test.dir/rule
-.PHONY : UnitTests/CMakeFiles/my_test.dir/rule
+Test/CMakeFiles/my_test.dir/rule:
+	cd /usr/src/app/workspace/UnitTests/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Test/CMakeFiles/my_test.dir/rule
+.PHONY : Test/CMakeFiles/my_test.dir/rule
 
 # Convenience name for target.
-my_test: UnitTests/CMakeFiles/my_test.dir/rule
+my_test: Test/CMakeFiles/my_test.dir/rule
 .PHONY : my_test
 
 # fast build rule for target.
 my_test/fast:
-	cd /usr/src/app/workspace/UnitTests/build && $(MAKE) $(MAKESILENT) -f UnitTests/CMakeFiles/my_test.dir/build.make UnitTests/CMakeFiles/my_test.dir/build
+	cd /usr/src/app/workspace/UnitTests/build && $(MAKE) $(MAKESILENT) -f Test/CMakeFiles/my_test.dir/build.make Test/CMakeFiles/my_test.dir/build
 .PHONY : my_test/fast
 
 my_test.o: my_test.cpp.o
@@ -190,7 +190,7 @@ my_test.o: my_test.cpp.o
 
 # target to build an object file
 my_test.cpp.o:
-	cd /usr/src/app/workspace/UnitTests/build && $(MAKE) $(MAKESILENT) -f UnitTests/CMakeFiles/my_test.dir/build.make UnitTests/CMakeFiles/my_test.dir/my_test.cpp.o
+	cd /usr/src/app/workspace/UnitTests/build && $(MAKE) $(MAKESILENT) -f Test/CMakeFiles/my_test.dir/build.make Test/CMakeFiles/my_test.dir/my_test.cpp.o
 .PHONY : my_test.cpp.o
 
 my_test.i: my_test.cpp.i
@@ -198,7 +198,7 @@ my_test.i: my_test.cpp.i
 
 # target to preprocess a source file
 my_test.cpp.i:
-	cd /usr/src/app/workspace/UnitTests/build && $(MAKE) $(MAKESILENT) -f UnitTests/CMakeFiles/my_test.dir/build.make UnitTests/CMakeFiles/my_test.dir/my_test.cpp.i
+	cd /usr/src/app/workspace/UnitTests/build && $(MAKE) $(MAKESILENT) -f Test/CMakeFiles/my_test.dir/build.make Test/CMakeFiles/my_test.dir/my_test.cpp.i
 .PHONY : my_test.cpp.i
 
 my_test.s: my_test.cpp.s
@@ -206,7 +206,7 @@ my_test.s: my_test.cpp.s
 
 # target to generate assembly for a file
 my_test.cpp.s:
-	cd /usr/src/app/workspace/UnitTests/build && $(MAKE) $(MAKESILENT) -f UnitTests/CMakeFiles/my_test.dir/build.make UnitTests/CMakeFiles/my_test.dir/my_test.cpp.s
+	cd /usr/src/app/workspace/UnitTests/build && $(MAKE) $(MAKESILENT) -f Test/CMakeFiles/my_test.dir/build.make Test/CMakeFiles/my_test.dir/my_test.cpp.s
 .PHONY : my_test.cpp.s
 
 # Help Target

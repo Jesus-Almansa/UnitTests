@@ -11,7 +11,7 @@ BuildDirectory: /usr/src/app/workspace/UnitTests/build
 CostDataFile: 
 
 # Site is something like machine.domain, i.e. pragmatic.crd
-Site: fe812d44edd0
+Site: a849f3cf4852
 
 # Build name is osname-revision-compiler, i.e. Linux-2.4.2-2smp-c++
 BuildName: Linux-c++

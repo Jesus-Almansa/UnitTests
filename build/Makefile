@@ -597,7 +597,7 @@ my_test: cmake_check_build_system
 
 # fast build rule for target.
 my_test/fast:
-	$(MAKE) $(MAKESILENT) -f UnitTests/CMakeFiles/my_test.dir/build.make UnitTests/CMakeFiles/my_test.dir/build
+	$(MAKE) $(MAKESILENT) -f Test/CMakeFiles/my_test.dir/build.make Test/CMakeFiles/my_test.dir/build
 .PHONY : my_test/fast
 
 # Help Target

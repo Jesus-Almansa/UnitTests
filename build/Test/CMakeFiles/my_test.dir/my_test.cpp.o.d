@@ -1,5 +1,5 @@
-UnitTests/CMakeFiles/my_test.dir/my_test.cpp.o: \
- /usr/src/app/workspace/UnitTests/UnitTests/my_test.cpp \
+Test/CMakeFiles/my_test.dir/my_test.cpp.o: \
+ /usr/src/app/workspace/UnitTests/Test/my_test.cpp \
  /usr/include/stdc-predef.h \
  /usr/src/app/workspace/UnitTests/external/googletest/googletest/include/gtest/gtest.h \
  /usr/include/c++/13.2.1/cstddef \

@@ -1,4 +1,4 @@
-TestTopic.TrivialEquality 6 0.0167561
-TestTopic.MoreEqualityTests 1 0.0300546
+TestTopic.TrivialEquality 1 0.0142174
+TestTopic.MoreEqualityTests 0 0
 ---
 TestTopic.MoreEqualityTests
