@@ -1,7 +1,3 @@
-Here is the updated `README.md` with the explanation about having multiple `CMakeLists.txt` files added:
-
----
-
 # Unit Testing with GoogleTest
 
 This document provides instructions for setting up and running unit tests in this project using the [GoogleTest](https://github.com/google/googletest) framework.
@@ -170,7 +166,3 @@ GoogleTest is included as a submodule in this project. If you're adding it for t
 
 3. **Test Failures**:
    Check the implementation of your functions and test cases for discrepancies.
-
----
-
-Let me know if you have more ideas to include!
