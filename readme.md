@@ -1,3 +1,7 @@
+Here is the updated `README.md` with the explanation about having multiple `CMakeLists.txt` files added:
+
+---
+
 # Unit Testing with GoogleTest
 
 This document provides instructions for setting up and running unit tests in this project using the [GoogleTest](https://github.com/google/googletest) framework.
@@ -6,6 +10,7 @@ This document provides instructions for setting up and running unit tests in thi
 
 ## Table of Contents
 - [Prerequisites](#prerequisites)
+- [Project Structure and CMakeLists.txt Files](#project-structure-and-cmakeliststxt-files)
 - [Adding GoogleTest as a Submodule](#adding-googletest-as-a-submodule)
 - [Configuring the Build](#configuring-the-build)
 - [Running the Tests](#running-the-tests)
@@ -19,6 +24,48 @@ Ensure the following tools are installed:
 - **CMake** (version 3.16 or later)
 - A compatible C++ compiler (e.g., GCC or Clang)
 - **Git** for version control
+
+---
+
+## Project Structure and `CMakeLists.txt` Files
+
+This project uses multiple `CMakeLists.txt` files to organize the build system. Each file has a specific role:
+
+### **Top-Level `CMakeLists.txt`**
+Located in the root directory of the project, this file serves as the entry point for configuring the entire project.
+
+#### Responsibilities:
+- Sets global project settings (e.g., project name, minimum required CMake version).
+- Includes subdirectories (e.g., `Test`, `src`) using the `add_subdirectory` command.
+- Manages external dependencies, such as GoogleTest.
+
+Example:
+```cmake
+cmake_minimum_required(VERSION 3.16)
+project(MyProject)
+
+add_subdirectory(Test)
+add_subdirectory(src)
+add_subdirectory(external/googletest)
+```
+
+### **Subdirectory `CMakeLists.txt`**
+Each subdirectory (e.g., `Test`, `src`) contains its own `CMakeLists.txt` file to handle configuration for its specific component.
+
+#### Responsibilities:
+- Defines targets (e.g., executables, libraries) for the subdirectory.
+- Sets include paths, compiler flags, and links dependencies specific to that component.
+
+Example (from `Test/CMakeLists.txt`):
+```cmake
+add_executable(my_test my_test.cpp)
+target_link_libraries(my_test PRIVATE gtest gtest_main)
+```
+
+### Why This Structure?
+- **Modularity**: Simplifies management of different components, such as source code and tests.
+- **Scalability**: Supports large projects by breaking the build process into manageable sections.
+- **Reusability**: Allows independent compilation and testing of components.
 
 ---
 
@@ -126,29 +173,4 @@ GoogleTest is included as a submodule in this project. If you're adding it for t
 
 ---
 
-## Example Workflow
-
-1. **Add GoogleTest**:
-   ```bash
-   git submodule add https://github.com/google/googletest.git external/googletest
-   git submodule update --init --recursive
-   ```
-
-2. **Configure and Build**:
-   ```bash
-   cmake -S . -B build
-   cmake --build build -j12
-   ```
-
-3. **Run Tests**:
-   ```bash
-   GTEST_COLOR=1 ctest --test-dir build --output-on-failure -j1
-   ```
-
----
-
-## References
-
-- [GoogleTest Documentation](https://github.com/google/googletest/blob/main/googletest/docs/primer.md)
-- [CMake Documentation](https://cmake.org/documentation/)
-- [Git Submodules Guide](https://git-scm.com/book/en/v2/Git-Tools-Submodules)
+Let me know if you have more ideas to include!
