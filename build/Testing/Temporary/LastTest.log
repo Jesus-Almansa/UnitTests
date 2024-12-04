@@ -1,10 +1,10 @@
-Start testing: Dec 04 16:50 UTC
+Start testing: Dec 04 17:11 UTC
 ----------------------------------------------------------
 2/2 Testing: TestTopic.MoreEqualityTests
 2/2 Test: TestTopic.MoreEqualityTests
 Command: "/usr/src/app/workspace/UnitTests/build/UnitTests/my_test" "--gtest_filter=TestTopic.MoreEqualityTests" "--gtest_also_run_disabled_tests"
 Directory: /usr/src/app/workspace/UnitTests/build/UnitTests
-"TestTopic.MoreEqualityTests" start time: Dec 04 16:50 UTC
+"TestTopic.MoreEqualityTests" start time: Dec 04 17:11 UTC
 Output:
 ----------------------------------------------------------
 Running main() from /usr/src/app/workspace/UnitTests/external/googletest/googletest/src/gtest_main.cc
@@ -34,7 +34,7 @@ Oh no, a mistake!
 Test time =   0.02 sec
 ----------------------------------------------------------
 Test Failed.
-"TestTopic.MoreEqualityTests" end time: Dec 04 16:50 UTC
+"TestTopic.MoreEqualityTests" end time: Dec 04 17:11 UTC
 "TestTopic.MoreEqualityTests" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -42,7 +42,7 @@ Test Failed.
 1/2 Test: TestTopic.TrivialEquality
 Command: "/usr/src/app/workspace/UnitTests/build/UnitTests/my_test" "--gtest_filter=TestTopic.TrivialEquality" "--gtest_also_run_disabled_tests"
 Directory: /usr/src/app/workspace/UnitTests/build/UnitTests
-"TestTopic.TrivialEquality" start time: Dec 04 16:50 UTC
+"TestTopic.TrivialEquality" start time: Dec 04 17:11 UTC
 Output:
 ----------------------------------------------------------
 Running main() from /usr/src/app/workspace/UnitTests/external/googletest/googletest/src/gtest_main.cc
@@ -58,11 +58,11 @@ Running main() from /usr/src/app/workspace/UnitTests/external/googletest/googlet
 [0;32m[==========] [m1 test from 1 test suite ran. (0 ms total)
 [0;32m[  PASSED  ] [m1 test.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.02 sec
 ----------------------------------------------------------
 Test Passed.
-"TestTopic.TrivialEquality" end time: Dec 04 16:50 UTC
+"TestTopic.TrivialEquality" end time: Dec 04 17:11 UTC
 "TestTopic.TrivialEquality" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Dec 04 16:50 UTC
+End testing: Dec 04 17:11 UTC

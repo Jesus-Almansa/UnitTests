@@ -3,6 +3,7 @@ project(try_googletest VERSION 0.0.1
                     DESCRIPTION "Try googletest"
                     LANGUAGES CXX)
 # Enable testing for this project
+include(cmake/UpdateSubmodules.cmake)
 include(CTest)
 # Add subdirectories with code
 add_subdirectory(external)
